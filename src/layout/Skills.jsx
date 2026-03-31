@@ -2,13 +2,7 @@ import React from 'react'
 import { Code, AppWindowMac, Settings, BrainCircuit, Database, Globe } from 'lucide-react';
 
 function Skills() {
-  const mockSkills = [
-    { name: 'JavaScript' },
-    { name: 'React' },
-    { name: 'Node.js' },
-    { name: 'Python' },
-  ];
-
+  
   const stack =
   [
     { name: 'Programming Languages', icon: AppWindowMac, skills: ['Python', 'Java', 'C#', 'C++', 'JavaScript'] },
