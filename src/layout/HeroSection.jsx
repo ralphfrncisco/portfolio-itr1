@@ -130,7 +130,7 @@ function HeroSection() {
             <span className="text-emerald-600">Ralph</span> Francisco
             <span className="text-emerald-600">.</span>
           </p>
-          <p className="text-3xl flex gap-2">
+          <p className="text-2xl flex gap-2">
             <span className="rotating-word-container">
               <span key={animKey} className="rotating-word">
                 {WORDS[index]}
