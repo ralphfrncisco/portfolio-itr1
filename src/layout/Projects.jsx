@@ -119,7 +119,7 @@ function Projects() {
 
     return (
         <>
-            <div className="py-20 flex items-center justify-center flex-col bg-[#0B0B0B]">
+            <div className="py-20 flex items-center justify-center flex-col bg-[#0B0B0B]" id = "projects">
                 <div className="text-center">
                     <h1 className="text-3xl font-medium">Featured Projects</h1>
                     <p className="text-sm mt-2 font-extralight text-white/80 text-center normal-text tracking-normal">An array of projects that demonstrate my expertise in full-stack development.</p>

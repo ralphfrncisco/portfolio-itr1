@@ -7,14 +7,11 @@ function Header() {
             <div>
                 <h1 className = "text-xl tracking-wider font-extrabold brand-name">Ralph F<span className = "text-emerald-500">.</span></h1>
             </div>
-            <div>
-                <ul className = "flex items-center gap-8 normal-text">
-                    <li className = "text-sm font-normal text-white/80 hover:text-white transition duration-300 cursor-pointer">Home</li>
-                    <li className = "text-sm font-normal text-white/80 hover:text-white transition duration-300 cursor-pointer">About</li>
-                    <li className = "text-sm font-normal text-white/80 hover:text-white transition duration-300 cursor-pointer">Experience</li>
-                    <li className = "text-sm font-normal text-white/80 hover:text-white transition duration-300 cursor-pointer">Projects</li>
-                    <li className = "text-sm font-normal text-white/80 hover:text-white transition duration-300 cursor-pointer">Contact</li>
-                </ul>
+            <div className = "flex items-center gap-8 normal-text">
+                <a href="#root" className = "text-sm font-normal text-white/80 hover:text-white transition duration-300 cursor-pointer">Home</a>
+                <a href="#Skills" className = "text-sm font-normal text-white/80 hover:text-white transition duration-300 cursor-pointer">Skills</a>
+                <a href="#experience" className = "text-sm font-normal text-white/80 hover:text-white transition duration-300 cursor-pointer">Experience</a>
+                <a href="#projects" className = "text-sm font-normal text-white/80 hover:text-white transition duration-300 cursor-pointer">Projects</a>
             </div>
         </div>
     </div>

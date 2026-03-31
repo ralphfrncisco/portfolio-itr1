@@ -15,7 +15,7 @@ function Skills() {
 
   return (
     <>
-      <div className = "py-20 flex items-center justify-center flex-col">
+      <div className = "py-20 flex items-center justify-center flex-col" id = "Skills">
         <div className = "text-center">
           <h1 className = "text-3xl font-medium">Technical Skills</h1>
           <p className = "text-sm mt-2 font-extralight text-white/80 text-center normal-text tracking-normal">Expertise across modern development stack with focus on building scalable and on-point web applications.</p>
