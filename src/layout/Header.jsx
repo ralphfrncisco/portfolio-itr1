@@ -5,8 +5,8 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Reveal navbar after 100px
-      if (window.scrollY > 100) {
+      // Triggers almost immediately at 5px
+      if (window.scrollY > 5) {
         setHasScrolled(true);
       } else {
         setHasScrolled(false);
@@ -25,7 +25,8 @@ function Header() {
 
   return (
     <header 
-      className={`fixed top-0 left-0 w-full py-4 z-50 bg-[#0B0B0B]/70 border-b border-white/20 backdrop-blur-md transition-all duration-500 ease-in-out ${
+      /* Changed duration-500 to duration-300 for a faster slide */
+      className={`fixed top-0 left-0 w-full py-4 z-50 bg-[#0B0B0B]/70 border-b border-white/20 backdrop-blur-md transition-all duration-300 ease-out ${
         hasScrolled ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
       }`}
     >
@@ -42,15 +43,12 @@ function Header() {
             <a
               key={link.name}
               href={link.href}
-              /* CRITICAL FIX: We force 'invisible' as the base state. 
-                 The animation class only swaps in when hasScrolled is true.
-              */
               className={`text-sm font-normal text-white/80 hover:text-white transition-colors duration-300 cursor-pointer invisible ${
                 hasScrolled ? '!visible animate-fade-down' : ''
               }`}
               style={{ 
-                // Delay starts AFTER the header finishes sliding down (500ms)
-                animationDelay: `${500 + (index * 100)}ms`, 
+                /* Reduced base delay to 300ms to match the new faster header slide */
+                animationDelay: `${300 + (index * 200)}ms`, 
                 animationFillMode: 'forwards' 
               }}
             >

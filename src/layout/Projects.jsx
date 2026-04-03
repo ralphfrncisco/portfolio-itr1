@@ -72,7 +72,7 @@ const projects = [
         path: IRMSimage,
         images: [IRMSimage],
         type: "Freelance Project",
-        langs: ["ReactJS", "PostGreSQL"],
+        langs: ["React", "PostgreSQL"],
         features: [
             "Full CRUD for inventory items and categories",
             "Sales transaction recording and history",

@@ -52,7 +52,7 @@ function Experience() {
                   <div className="flex flex-col items-start mt-5 md:mt-0 md:items-end gap-2">
                     <div className="flex items-center gap-2">
                       <span><Calendar size={16} className="text-white/40"/></span>
-                      <h2 className="text-sm text-white/40">{exp.duration}</h2>
+                      <h2 className="text-sm text-white/70">{exp.duration}</h2>
                     </div>
                   </div>
                 </div>

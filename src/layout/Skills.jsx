@@ -6,7 +6,7 @@ function Skills() {
   const stack =
   [
     { name: 'Programming Languages', icon: AppWindowMac, skills: ['Python', 'Java', 'C#', 'C++', 'JavaScript'] },
-    { name: 'Web Development', icon: Code, skills: ['PHP', 'Bootstrap', 'Tailwind', 'React.js', 'Vite', 'Node.js'] },
+    { name: 'Web Development', icon: Code, skills: ['PHP', 'Bootstrap', 'Tailwind', 'React', 'Vite', 'Node.js'] },
     { name: 'Dev Tools', icon: Settings, skills: ['VSCode', 'XAMPP', 'Git', 'GitHub', 'Browser Dev Tools', 'Vercel'] },
     { name: 'AI Tools', icon: BrainCircuit, skills: ['Open AI', 'Gemini AI', 'Copilot', 'Claude AI'] },
     { name: 'Network', icon: Globe, skills: ['Cisco Packet Tracer', 'MikroTik WinBox'] },

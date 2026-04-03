@@ -36,7 +36,7 @@ html, body
 @keyframes fadeDown {
   0% {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-2px);
   }
   100% {
     opacity: 1;
