@@ -32,3 +32,35 @@ html, body
   font-family: system-ui;
   font-style: normal;
 }
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-down {
+  animation: fadeDown 0.18s linear forwards;
+}
+
+/* This helper ensures the links are hidden before the animation starts */
+.invisible {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* The !visible class in the JS will override this once we scroll */
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.description-font
+{
+  font-family: "Questrial";
+}

@@ -16,7 +16,7 @@ const styles = `
     height: 600px;
     border-radius: 50%;
     background: radial-gradient(circle at 40% 40%,
-      rgba(16, 185, 129, 0.35) 0%,
+      #10b98159 0%,
       rgba(5, 150, 105, 0.18) 45%,
       transparent 50%
     );
@@ -140,8 +140,8 @@ function HeroSection() {
           </p>
 
           <div className = "flex items-center gap-6 mt-4 text-sm">
-            <a href={resumePDF} target='_blank' className = "flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-500 transition duration-300"><Download className = "w-5 h-5"/> Download Resume</a>
-            <a href="#projects" className = "flex items-center gap-2 px-6 py-3 bg-[#121212] border border-white/20 text-white/70 rounded-lg hover:bg-white/10 transition duration-300">View my Work</a>
+            <a href={resumePDF} target='_blank' className = "flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition duration-300"><Download className = "w-5 h-5"/> Download Resume</a>
+            <a href="#projects" className = "flex items-center gap-2 px-6 py-3 bg-[#121212]/70 border border-white/20 text-white/90 rounded-lg hover:bg-white/2 transition duration-100 backdrop-blur-sm">View my Works</a>
           </div>
         </div>
       </div>
