@@ -55,7 +55,12 @@ html, body
 }
 
 /* The !visible class in the JS will override this once we scroll */
-.!visible {
+.visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+.description-font
+{
+  font-family: "Questrial";
 }

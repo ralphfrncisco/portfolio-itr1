@@ -5,7 +5,6 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Triggers almost immediately at 5px
       if (window.scrollY > 5) {
         setHasScrolled(true);
       } else {
@@ -25,9 +24,8 @@ function Header() {
 
   return (
     <header 
-      /* Changed duration-500 to duration-300 for a faster slide */
       className={`fixed top-0 left-0 w-full py-4 z-50 bg-[#0B0B0B]/70 border-b border-white/20 backdrop-blur-md transition-all duration-300 ease-out ${
-        hasScrolled ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+        hasScrolled ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
       }`}
     >
       <div className="max-w-6xl flex items-center justify-between w-full mx-auto px-4">
@@ -43,11 +41,15 @@ function Header() {
             <a
               key={link.name}
               href={link.href}
-              className={`text-sm font-normal text-white/80 hover:text-white transition-colors duration-300 cursor-pointer invisible ${
-                hasScrolled ? '!visible animate-fade-down' : ''
+              /* FIX: Removed 'invisible' and '!visible'.
+                 Used 'opacity-0' and 'pointer-events-none' instead.
+              */
+              className={`text-sm font-normal text-white/80 hover:text-white transition-colors duration-300 cursor-pointer ${
+                hasScrolled 
+                  ? 'pointer-events-auto' 
+                  : 'opacity-0 pointer-events-none'
               }`}
               style={{ 
-                /* Reduced base delay to 300ms to match the new faster header slide */
                 animationDelay: `${300 + (index * 200)}ms`, 
                 animationFillMode: 'forwards' 
               }}

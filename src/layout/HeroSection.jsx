@@ -16,7 +16,7 @@ const styles = `
     height: 600px;
     border-radius: 50%;
     background: radial-gradient(circle at 40% 40%,
-      rgba(16, 185, 129, 0.35) 0%,
+      #10b98159 0%,
       rgba(5, 150, 105, 0.18) 45%,
       transparent 50%
     );
