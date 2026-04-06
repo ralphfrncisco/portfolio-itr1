@@ -50,9 +50,9 @@ function Contact() {
     setIsSubmitting(true);
 
     // IMPORTANT: Replace these strings with your actual EmailJS credentials
-    const SERVICE_ID = "service_2jrfy7d";
-    const TEMPLATE_ID = "template_2675xhb";
-    const PUBLIC_KEY = "P7JvXu2DJWomdKJVR";
+    const SERVICE_ID = import.meta.env.VITE_EMAIL_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+    const PUBLIC_KEY = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
       .then(() => {
