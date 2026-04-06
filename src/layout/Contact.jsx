@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Mail, MapPin, ExternalLink, Send, CheckCircle2, Loader2 } from 'lucide-react';
 import emailjs from '@emailjs/browser'; 
-import profileImage from '../assets/images/profile-image.jpg';
+import profileImage from '../assets/images/profile-image.webp';
 
 function Contact() {
   const fullText = "I am currently working on small projects that helps small businesses by transitioning from manual tasks into efficient, scalable solutions.";
