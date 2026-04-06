@@ -124,13 +124,13 @@ function HeroSection() {
         {/* Backdrop blur layer */}
         <div className="hero-backdrop" />
 
-        <div className="hero-content justify-center items-center flex flex-col gap-4">
+        <div className="hero-content justify-center items-center flex flex-col gap-4 pt-[-50px] md:pt-0">
           <p className="text-xl text-white/70">Hello there! I'm</p>
-          <p className="text-7xl font-bold">
+          <p className="text-6xl sm:text-5xl md:text-7xl font-bold text-center md:text-left">
             <span className="text-emerald-600">Ralph</span> Francisco
             <span className="text-emerald-600">.</span>
           </p>
-          <p className="text-2xl flex gap-2">
+          <p className="text-lg md:text-2xl flex gap-2">
             <span className="rotating-word-container">
               <span key={animKey} className="rotating-word">
                 {WORDS[index]}
@@ -139,7 +139,7 @@ function HeroSection() {
             <span className = "text-emerald-600"> Developer</span>
           </p>
 
-          <div className = "flex items-center gap-6 mt-4 text-sm">
+          <div className = "flex flex-col md:flex-row items-center gap-4 md:gap-6 mt-10 md:mt-4 text-sm">
             <a href={resumePDF} target='_blank' className = "flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition duration-300"><Download className = "w-5 h-5"/> Download Resume</a>
             <a href="#projects" className = "flex items-center gap-2 px-6 py-3 bg-[#121212]/70 border border-white/20 text-white/90 rounded-lg hover:bg-white/2 transition duration-100 backdrop-blur-sm">View my Works</a>
           </div>

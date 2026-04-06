@@ -1,27 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import { Menu } from 'lucide-react';
 
-function Header() {
+function Header({ onOpenMenu, navLinks }) {
   const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 5) {
-        setHasScrolled(true);
-      } else {
-        setHasScrolled(false);
-      }
+      setHasScrolled(window.scrollY > 5);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const navLinks = [
-    { name: "Home", href: "#root" },
-    { name: "Skills", href: "#Skills" },
-    { name: "Experience", href: "#experience" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
-  ];
 
   return (
     <header 
@@ -29,36 +18,31 @@ function Header() {
         hasScrolled ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
       }`}
     >
-      <div className="max-w-6xl flex items-center justify-between w-full mx-auto px-4">
-
-        <div className={`${hasScrolled ? 'animate-fade-down' : 'opacity-0'}`}>
-          <h1 className="text-xl tracking-wide font-bold brand-name text-white">
+      <div className="max-w-6xl flex items-center justify-between w-full mx-auto px-7 lg:px-4">
+        <div>
+          <h1 className="text-xl tracking-wide font-bold text-white">
             Ralph F<span className="text-emerald-500">.</span>
           </h1>
         </div>
         
-        <nav className="flex items-center gap-8 normal-text">
-          {navLinks.map((link, index) => (
+        <nav className="hidden md:flex items-center gap-8">
+          {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              /* FIX: Removed 'invisible' and '!visible'.
-                 Used 'opacity-0' and 'pointer-events-none' instead.
-              */
-              className={`text-sm font-normal text-white/80 hover:text-white transition-colors duration-300 cursor-pointer ${
-                hasScrolled 
-                  ? 'pointer-events-auto' 
-                  : 'opacity-0 pointer-events-none'
-              }`}
-              style={{ 
-                animationDelay: `${300 + (index * 200)}ms`, 
-                animationFillMode: 'forwards' 
-              }}
+              className="text-sm font-normal text-white/80 hover:text-white transition-colors duration-300"
             >
               {link.name}
             </a>
           ))}
         </nav>
+        
+        <button 
+          onClick={onOpenMenu}
+          className="p-2 border border-white/15 rounded-lg text-white/80 hover:text-white transition-colors duration-300 md:hidden active:scale-95"
+        > 
+          <Menu size={18} /> 
+        </button>
       </div>
     </header>
   );

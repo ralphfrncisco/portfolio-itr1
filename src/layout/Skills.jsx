@@ -20,7 +20,7 @@ function Skills() {
           <h1 className = "text-3xl font-medium">Technical Skills</h1>
           <p className = "text-sm mt-2 font-extralight text-white/80 text-center normal-text tracking-normal">Expertise across modern development stack with focus on building scalable and on-point web applications.</p>
         </div>
-        <div className = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 px-4 max-w-6xl">
+        <div className = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6 mt-8 px-7 lg:px-4 max-w-6xl">
           {stack.map((category, index) => (
             <div key={index} className = "p-4 rounded-xl border border-white/20 normal-text bg-[#0A0A0A] space-y-4 pb-5 hover:bg-[#0B0B0B]/50 transition duration-300">
               <div className = "flex items-center gap-2">
