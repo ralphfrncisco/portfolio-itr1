@@ -67,8 +67,8 @@ const projects = [
     },
     {
         name: "Talaan",
-        description: "Inventory-Record Management System (IRMS) is a simple CRUD system using ReactJS and PostGreSQL to enhance the management of inventory and sales transactions for a small business.",
-        longDescription: "IRMS is a freelance project for a small business client who needed a lightweight, custom-built solution to manage their inventory and record sales transactions. Built with ReactJS on the frontend and PostgreSQL on the backend, the system handles all core CRUD operations and is actively being developed with new features planned for reporting and analytics.",
+        description: "Talaan is a simple CRUD system using ReactJS and PostGreSQL to enhance the management of inventory and sales transactions for a small business.",
+        longDescription: "Talaan is a freelance project for a small business client who needed a lightweight, custom-built solution to manage their inventory and record sales transactions. Built with ReactJS on the frontend and PostgreSQL on the backend, the system handles all core CRUD operations and is actively being developed with new features planned for reporting and analytics.",
         path: IRMSimage,
         images: [IRMSimage],
         type: "Freelance Project",
