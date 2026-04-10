@@ -77,7 +77,9 @@ const projects = [
             "Full CRUD for inventory items and categories",
             "Sales transaction recording and history",
             "Stock level tracking with low-inventory alerts",
-            "PostgreSQL relational data model"
+            "PostgreSQL relational data model",
+            "Auto-Generation of Summary Reports for Revenue and Expenses",
+            "Telegram bot integration for real-time notifications"
         ],
         link: "https://github.com/ralphfrncisco/IRMS",
         github: "https://github.com/ralphfrncisco/IRMS",
