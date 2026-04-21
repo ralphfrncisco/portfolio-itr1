@@ -23,7 +23,7 @@ function Header({ onOpenMenu }) {
     <header 
       className={`px-2 lg:px-0 py-2 fixed left-0 w-full z-50 transition-all duration-300 ease-out 
         ${/* Mobile: Bottom, Desktop: Top */ ''}
-        bottom-0 md:bottom-auto md:top-0
+        bottom-5 md:bottom-auto md:top-0
         ${
           hasScrolled 
             ? 'translate-y-0 opacity-100' 
