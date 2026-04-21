@@ -81,15 +81,21 @@ function TypewriterBio({ text, isStarted }) {
     const t = setTimeout(() => {
       setDisplayed((prev) => prev + text[index]);
       setIndex((prev) => prev + 1);
-    }, 35);
+    }, 30);
     return () => clearTimeout(t);
   }, [index, isStarted, text]);
+
+  const isFinished = index >= text.length;
 
   return (
     <p className="text-sm leading-snug w-[320px] md:w-[430px] text-white/90 normal-text mt-4 py-4 px-5 bg-white/6 rounded-b-3xl rounded-tr-3xl rounded-tl-xs min-h-[90px]">
       {displayed}
       {isStarted && (
-        <span className="inline-block w-[1px] h-[15px] mt-[-5px] bg-emerald-500 ml-1 animate-pulse align-middle" />
+        <span 
+          className={`inline-block w-[1px] h-[15px] bg-emerald-500 ml-1 align-middle ${
+            isFinished ? 'blinking-caret' : ''
+          }`} 
+        />
       )}
     </p>
   );

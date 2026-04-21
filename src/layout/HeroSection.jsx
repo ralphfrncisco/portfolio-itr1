@@ -124,7 +124,7 @@ function HeroSection() {
         {/* Backdrop blur layer */}
         <div className="hero-backdrop" />
 
-        <div className="hero-content justify-center items-center flex flex-col gap-4 pt-[-50px] md:pt-0">
+        <div className="hero-content justify-center items-center flex flex-col gap-4 mt-[-130px] md:mt-0">
           <p className="text-xl text-white/70">Hello there! I'm</p>
           <p className="text-6xl sm:text-5xl md:text-7xl font-bold text-center md:text-left">
             <span className="text-emerald-600">Ralph</span> Francisco
