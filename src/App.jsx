@@ -28,7 +28,6 @@ function App() {
         <div 
           className={`absolute right-4 w-38 rounded-2xl py-3 transition-all duration-300 ease-out border border-white/10
             bg-[#0A0A0A]
-            ${/* Position dropdown above the bottom header on mobile */ ''}
             bottom-[95px] md:top-[72px] md:bottom-auto
             ${
               isMenuOpen 
