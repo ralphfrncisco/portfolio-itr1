@@ -10,7 +10,6 @@ import Footer from './layout/Footer.jsx'
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const navLinks = [
     { name: "Home", href: "#root" },
     { name: "Skills", href: "#Skills" },
@@ -26,15 +25,15 @@ function App() {
       {/* Dark Emerald Liquid Glass Dropdown */}
       <div className={`fixed inset-0 z-[100] md:hidden ${isMenuOpen ? "visible" : "invisible"}`}>
         <div className="absolute inset-0" onClick={() => setIsMenuOpen(false)} />
-
         <div 
-          className={`absolute right-6 top-[72px] w-38 rounded-2xl py-3 transition-all duration-300 ease-out border border-white/10
+          className={`absolute right-6 w-38 rounded-2xl py-3 transition-all duration-300 ease-out border border-white/10
             bg-[#0A0A0A]
-            
+            ${/* Position dropdown above the bottom header on mobile */ ''}
+            bottom-[72px] md:top-[72px] md:bottom-auto
             ${
               isMenuOpen 
                 ? "opacity-100 scale-100 translate-y-0" 
-                : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
+                : "opacity-0 scale-95 max-md:translate-y-2 md:-translate-y-2 pointer-events-none"
             }`}
         >
           <nav className="flex flex-col gap-1 px-2">
@@ -51,7 +50,6 @@ function App() {
           </nav>
         </div>
       </div>
-
       <HeroSection />
       <Skills />
       <Experience />
