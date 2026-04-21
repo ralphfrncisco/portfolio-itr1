@@ -28,10 +28,8 @@ function App() {
         <div className="absolute inset-0" onClick={() => setIsMenuOpen(false)} />
 
         <div 
-          className={`absolute right-6 top-[72px] w-52 rounded-2xl py-3 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300 ease-out origin-top-right
+          className={`absolute right-6 top-[72px] w-38 rounded-2xl py-3 transition-all duration-300 ease-out border border-white/10
             bg-[#0A0A0A]
-            bg-gradient-to-br from-emerald-500/10 via-transparent to-emerald-900/5
-            border border-emerald-500/20 border-t-emerald-400/40
             
             ${
               isMenuOpen 
