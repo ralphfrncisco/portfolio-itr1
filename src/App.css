@@ -45,7 +45,7 @@ html, body
 }
 
 .animate-fade-down {
-  animation: fadeDown 0.18s linear forwards;
+  animation: fadeDown 0.10s linear forwards;
 }
 
 /* This helper ensures the links are hidden before the animation starts */

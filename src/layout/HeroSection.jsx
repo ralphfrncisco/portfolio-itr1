@@ -140,8 +140,8 @@ function HeroSection() {
           </p>
 
           <div className = "flex flex-col md:flex-row items-center gap-4 md:gap-6 mt-10 md:mt-4 text-sm">
-            <a href={resumePDF} target='_blank' className = "flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition duration-300"><Download className = "w-5 h-5"/> Download Resume</a>
-            <a href="#projects" className = "flex items-center gap-2 px-6 py-3 bg-[#121212]/70 border border-white/20 text-white/90 rounded-lg hover:bg-white/2 transition duration-100 backdrop-blur-sm">View my Works</a>
+            <a href={resumePDF} target='_blank' className = "flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition duration-300"><Download className = "w-5 h-5"/> Download Resume</a>
+            <a href="#projects" className = "flex items-center gap-2 px-6 py-3 bg-[#121212]/70 border border-white/10 text-white/90 rounded-full hover:bg-white/5 transition duration-100 backdrop-blur-sm">View my Works</a>
           </div>
         </div>
       </div>

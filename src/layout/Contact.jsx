@@ -56,7 +56,7 @@ const FORM_FIELDS = [
 ];
 
 const INPUT_CLASS =
-  'mt-1 w-full text-sm text-slate-200 px-3 h-9 rounded-lg border border-white/5 bg-[#1E1E1E] focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all';
+  'mt-1 w-full text-sm text-slate-200 px-3 h-9 rounded-xl border border-white/5 bg-[#1E1E1E] focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all';
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
@@ -86,7 +86,7 @@ function TypewriterBio({ text, isStarted }) {
   }, [index, isStarted, text]);
 
   return (
-    <p className="text-sm leading-snug w-[320px] md:w-[430px] text-white/90 normal-text mt-4 py-4 px-5 bg-white/6 rounded-b-3xl rounded-tr-3xl rounded-tl-xs min-h-[100px]">
+    <p className="text-sm leading-snug w-[320px] md:w-[430px] text-white/90 normal-text mt-4 py-4 px-5 bg-white/6 rounded-b-3xl rounded-tr-3xl rounded-tl-xs min-h-[90px]">
       {displayed}
       {isStarted && (
         <span className="inline-block w-[1px] h-[15px] mt-[-5px] bg-emerald-500 ml-1 animate-pulse align-middle" />
@@ -154,14 +154,14 @@ function ContactForm() {
           name="message"
           required
           rows="3"
-          className="mt-1 w-full text-slate-200 px-4 py-3 rounded-lg border border-white/5 bg-[#1E1E1E] focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all resize-none"
+          className="mt-1 w-full text-slate-200 px-4 py-3 rounded-xl border border-white/5 bg-[#1E1E1E] focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all resize-none"
         />
       </div>
 
       <button
         type="submit"
         disabled={isSubmitting || isSent}
-        className={`w-full flex items-center justify-center gap-2 px-4 py-2 text-white normal-text text-sm rounded-lg transition-all duration-300 cursor-pointer ${
+        className={`w-full flex items-center justify-center gap-2 px-4 py-2 text-white normal-text text-sm rounded-xl transition-all duration-300 cursor-pointer ${
           isSent ? 'bg-emerald-500' : 'bg-emerald-600/90 hover:bg-emerald-700 active:scale-[0.98]'
         }`}
       >
@@ -243,7 +243,7 @@ function Contact() {
           </div>
 
           {/* Right — Contact form */}
-          <div className="order-1 lg:order-2 w-full max-w-lg py-4 px-6 rounded-lg border border-white/10">
+          <div className="order-1 lg:order-2 w-full max-w-lg py-4 px-6 rounded-2xl border border-white/10">
             <ContactForm />
           </div>
         </div>

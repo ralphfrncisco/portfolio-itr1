@@ -16,7 +16,7 @@ function App() {
     { name: "Skills", href: "#Skills" },
     { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "#contact" }
   ];
 
   return (
