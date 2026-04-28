@@ -28,7 +28,7 @@ function App() {
         <div 
           className={`absolute right-4 w-38 rounded-2xl py-3 transition-all duration-300 ease-out border border-white/10
             bg-[#0A0A0A]
-            bottom-[95px] md:top-[72px] md:bottom-auto
+            top-[72px]
             ${
               isMenuOpen 
                 ? "opacity-100 scale-100 translate-y-0" 
