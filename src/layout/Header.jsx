@@ -40,7 +40,7 @@ function Header({ onOpenMenu }) {
         onClick={scrollToTop}
         className={`py-2 px-4 tracking-tight text-[9.5pt] font-mono fixed md:hidden mx-auto left-1/2 transform -translate-x-1/2 flex items-center gap-2 z-50 rounded-xl bg-[#0B0B0B]/80 border border-white/10 text-white/55 backdrop-blur-xl transition-all duration-300 ease-out active:scale-90 shadow-2xl ${
           showBackToTop 
-            ? 'bottom-25 opacity-100 translate-y-0' 
+            ? 'bottom-10 opacity-100 translate-y-0' 
             : 'bottom-20 opacity-0 translate-y-10 pointer-events-none'
         }`}
       >
@@ -48,8 +48,7 @@ function Header({ onOpenMenu }) {
       </button>
 
       <header 
-        className={`px-2 lg:px-0 py-2 fixed left-0 w-full z-50 transition-all duration-300 ease-out 
-          bottom-5 md:bottom-auto md:top-0
+        className={`px-2 lg:px-0 py-2 fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-out
           ${
             hasScrolled 
               ? 'translate-y-0 opacity-100' 
