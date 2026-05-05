@@ -298,8 +298,8 @@ function Projects() {
     );
 
     return (
-        <>
-            <div className="py-20 flex items-center justify-center flex-col bg-gradient-to-tr from-[#101010] to-[#0A0A0A]" id="projects">
+        <section id="projects" className="scroll-mt-10">
+            <div className="py-20 flex items-center justify-center flex-col bg-gradient-to-tr from-[#101010] to-[#0A0A0A]">
                 <div className="text-center">
                     <h1 className="text-3xl font-medium">Featured Projects</h1>
                     <p className="text-sm mt-2 font-extralight text-white/80 text-center normal-text tracking-normal">
@@ -359,7 +359,7 @@ function Projects() {
                     to   { opacity: 1; transform: translateY(0); }
                 }
             `}</style>
-        </>
+        </section>
     );
 }
 

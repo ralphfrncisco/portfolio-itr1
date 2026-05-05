@@ -117,11 +117,11 @@ function HeroSection() {
     <>
       <style>{styles}</style>
       <div className="hero-section flex items-center justify-center z-1">
-        {/* Swimming orbs */}
+
         <div className="orb-1" />
         <div className="orb-2" />
 
-        {/* Backdrop blur layer */}
+
         <div className="hero-backdrop" />
 
         <div className="hero-content justify-center items-center flex flex-col gap-4 mt-[-130px] md:mt-0">

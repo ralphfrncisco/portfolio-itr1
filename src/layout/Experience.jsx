@@ -25,8 +25,8 @@ const Experiences = [
 
 function Experience() {
   return (
-    <>
-      <div className="py-20 flex items-center justify-center flex-col bg-[#0A0A0A] cursor-default" id="experience">
+    <section id = "experience" className = "scroll-mt-10">
+      <div className="py-20 flex items-center justify-center flex-col bg-[#0A0A0A] cursor-default">
         <div className="text-center">
           <h1 className="text-3xl font-medium">Professional Experience</h1>
           <p className="text-sm mt-2 font-extralight text-white/80 text-center normal-text tracking-normal">
@@ -71,7 +71,7 @@ function Experience() {
           ))}
         </div>
       </div>
-    </>
+    </section>
   )
 }
 

@@ -13,8 +13,8 @@ function Skills() {
   ];
 
   return (
-    <>
-      <div className="py-28 flex items-center justify-center flex-col bg-gradient-to-tr from-[#101010] to-[#0A0A0A] cursor-default" id="Skills">
+    <section id = "Skills" className = "scroll-mt-10">
+      <div className="py-28 flex items-center justify-center flex-col bg-gradient-to-tr from-[#101010] to-[#0A0A0A] cursor-default">
         <div className="text-center">
           <h1 className="text-3xl font-medium">Technical Skills</h1>
           <p className="text-sm mt-2 font-extralight text-white/80 text-center normal-text tracking-normal">
@@ -48,7 +48,7 @@ function Skills() {
           ))}
         </div>
       </div>
-    </>
+    </section>
   )
 }
 

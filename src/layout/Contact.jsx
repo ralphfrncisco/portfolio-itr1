@@ -194,7 +194,7 @@ function Contact() {
   }, []);
 
   return (
-    <section id="contact">
+    <section id="contact" className="scroll-mt-10 lg:scroll-mt-0">
       <div
         ref={sectionRef}
         className="w-full py-20 px-2 bg-gradient-to-tr from-[#0D0D0D] to-[#0A0A0A] space-y-10 lg:space-y-15"
