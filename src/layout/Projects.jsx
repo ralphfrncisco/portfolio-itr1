@@ -6,6 +6,7 @@ import loanSystemImage from '../assets/images/projects/loan-system.jpg';
 import slaMonitoringImage from '../assets/images/projects/SLA-index.jpg';
 import philippinesImage from '../assets/images/projects/philippines.png';
 import IRMSimage from '../assets/images/projects/IRMS.png';
+import KulasImage from '../assets/images/projects/kulas.png';
 import githubIcon from '../assets/github.svg';
 
 const projects = [
@@ -84,6 +85,28 @@ const projects = [
         link: "https://github.com/ralphfrncisco/IRMS",
         github: "https://github.com/ralphfrncisco/IRMS",
         demo: null,
+    },
+    {
+        name: "Kulas",
+        description: "Kulas is a RAG-based AI chatbot platform embedded into Talaan, providing context-aware answers about the inventory and sales management system.",
+        longDescription: "Kulas is a custom-built AI chatbot platform designed specifically for Talaan. It uses Retrieval-Augmented Generation (RAG) to answer user questions based on ingested knowledge about the system. Built with a Node.js/Express API, Groq's LLaMA model, HuggingFace embeddings, and Supabase with pgvector for vector search, Kulas is delivered as a lightweight vanilla JS widget that loads dynamically inside Talaan for authenticated users. The platform includes a React-based dashboard for managing the chatbot's knowledge base, configuration, and behavior.",
+        path: KulasImage,
+        images: [KulasImage],
+        type: "Personal Project",
+        langs: ["React", "Node.js", "Express", "Supabase", "PostgreSQL"],
+        features: [
+            "RAG pipeline with HuggingFace embeddings and pgvector similarity search",
+            "Groq LLaMA 3.1 language model integration",
+            "Vanilla JS widget embedded dynamically into Talaan",
+            "React + Vite dashboard for knowledge base and config management",
+            "Chat history persistence via localStorage",
+            "Context-scoped AI responses with follow-up suggestions",
+            "Modal-aware widget visibility via MutationObserver",
+            "Deployed across 3 separate Vercel projects from a single monorepo"
+        ],
+        link: "https://github.com/ralphfrncisco/Kulas",
+        github: "https://github.com/ralphfrncisco/Kulas",
+        demo: null,
     }
 ];
 
@@ -121,16 +144,16 @@ function Projects() {
 
     const modalContent = selectedProject && (
         <div
-            className="fixed inset-0 z-50 flex items-center justify-center p-4"
+            className="fixed inset-0 z-50 flex items-start justify-center p-4 overflow-y-auto"
             style={{ animation: 'fadeIn 0.18s ease' }}
             onClick={closeModal}
         >
             {/* Backdrop */}
-            <div className="absolute inset-0 bg-black/40 backdrop-blur-sm dark:bg-black/75" />
+            <div className="fixed inset-0 bg-black/40 backdrop-blur-sm dark:bg-black/75" />
 
             {/* Panel + floating close button wrapper */}
             <div
-                className="relative z-10 w-full max-w-2xl"
+                className="relative z-10 w-full max-w-2xl my-8"
                 style={{ animation: 'slideUp 0.2s ease' }}
                 onClick={e => e.stopPropagation()}
             >
@@ -147,9 +170,9 @@ function Projects() {
                 </button>
 
                 {/* Panel */}
-                <div className="custom-scrollbar w-full max-h-[92vh] pb-3 overflow-y-auto rounded-2xl shadow-2xl
+                <div className="w-full pb-3 rounded-2xl shadow-2xl
                     bg-white border border-gray-200 text-gray-900
-                    dark:bg-[#111] dark:border-[#2a2a2a] dark:text-white ">
+                    dark:bg-[#111] dark:border-[#2a2a2a] dark:text-white">
 
                     {/* Image gallery */}
                     <div
