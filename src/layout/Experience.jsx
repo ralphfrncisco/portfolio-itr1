@@ -5,7 +5,7 @@ const Experiences = [
   {
     title: 'Full-Stack Developer',
     company: 'Freelance',
-    duration: 'Dec 2025 - Present',
+    duration: 'Dec 2025 - April 2026',
     responsibilities: [
       'Designed, developed, and deployed full-stack web applications for clients, handling both front-end and back-end architecture.',
       'Collaborated directly with clients to gather requirements, deliver iterative updates, and ensure the final product met business needs.'
