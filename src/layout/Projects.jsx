@@ -113,7 +113,7 @@ const projects = [
         name: "Snap!",
         description: "Snap! is an expense tracker mobile application build as a Personal Project.",
         longDescription: "Snap! is a minimalist expense tracker mobile application built as a personal project to help users effortlessly monitor their daily cash flow and spending habits. Featuring a streamlined interface for quick transaction logging, automated category tagging, and clean monthly summaries, Snap! removes the friction from personal budgeting. It provides a straightforward, highly responsive platform for keeping tabs on where your money goes without the clutter of overly complex financial software.",        path: KulasImage,
-        path: KulasImage,
+        path: SnapImage,
         images: [SnapImage],
         type: "Personal Project",
         langs: ["React Native", "Node.js", "Expo Go", "Tailwind CSS"],
