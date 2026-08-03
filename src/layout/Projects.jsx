@@ -7,6 +7,7 @@ import slaMonitoringImage from '../assets/images/projects/SLA-index.jpg';
 import philippinesImage from '../assets/images/projects/philippines.png';
 import IRMSimage from '../assets/images/projects/IRMS.png';
 import KulasImage from '../assets/images/projects/kulas.png';
+import SnapImage from '../assets/images/projects/snap_portfolio.png';
 import githubIcon from '../assets/github.svg';
 
 const projects = [
@@ -106,6 +107,24 @@ const projects = [
         ],
         link: "https://github.com/ralphfrncisco/Kulas",
         github: "https://github.com/ralphfrncisco/Kulas",
+        demo: null,
+    },
+    {
+        name: "Snap!",
+        description: "Snap! is an expense tracker mobile application build as a Personal Project.",
+        longDescription: "Snap! is a minimalist expense tracker mobile application built as a personal project to help users effortlessly monitor their daily cash flow and spending habits. Featuring a streamlined interface for quick transaction logging, automated category tagging, and clean monthly summaries, Snap! removes the friction from personal budgeting. It provides a straightforward, highly responsive platform for keeping tabs on where your money goes without the clutter of overly complex financial software.",        path: KulasImage,
+        images: [SnapImage],
+        type: "Personal Project",
+        langs: ["React Native", "Node.js", "Expo Go", "Tailwind CSS"],
+       features: [
+            "Offline-first architecture enabling full expense logging and data access without an internet connection",
+            "Fast daily transaction entry to record expenses and cash flow instantly on the go",
+            "Historical spending analytics and trend visualization to track expenditures over time",
+            "Categorized expense management to monitor spending habits across different budgets",
+            "Local data persistence ensuring personal financial records remain secure and accessible"
+        ],
+        link: "https://github.com/ralphfrncisco/expense-tracker",
+        github: "https://github.com/ralphfrncisco/expense-tracker",
         demo: null,
     }
 ];
